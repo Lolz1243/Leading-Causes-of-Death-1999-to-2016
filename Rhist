@@ -1,0 +1,185 @@
+‹
+str(leading)
+load("C:\\Users\\3\\Desktop\\projects\\data challenge\\carolinadata-health\\.RData")
+str(leading)
+str(cities)
+str(500)
+leading_NC=subset(leading,State=="NC")
+str(leading_NC)
+summary(leading_NC)
+leading_NC=subset(leading,State=="North Carolina")
+str(leading_NC)
+summary(leading_NC)
+ls()
+plot(leading_NC$Cause.Name,leading_NC$Deaths)
+leadingNCOutliers = subset(leading_NC, leading_NC$Deaths<50000)
+plot(leadingNCOutliers$Cause.Name,leadingNCOutliers$Deaths)
+hist(leadingNCOutliers$Cause.Name)
+hist(leadingNCOutliers$Deaths)
+plot(leading_NC$Cause.Name,leading_NC$Deaths)
+hist(leadingNCOutliers$Deaths)
+boxplot(leading_NC$Cause.Name~leading_NC$Deaths)
+boxplot(leading_NC$Deaths~leading_NC$Cause.Name)
+sapply(leading_NC,mean,na.rm=TRUE)
+sapply(leading_NC,mean)
+q()
+load("C:\\Users\\3\\Documents\\.RData")
+ls()
+better_data=read.csv("Leading Causes of Death.csv")
+better_data=read.csv("leading.csv")
+getwd()
+better_data=read.csv("leading.csv")
+summary(better_data)
+str(better_data)
+table(better_data$2016,better_data$X)
+table(better_data$2016)
+table(better_data$X2016)
+str(leading)
+summary(leading)
+table(leading$State,leading$Death)
+ls()
+str(leading)
+install.packages("psych")
+library(psych)
+describe(leading)
+describe(leading$Cause.Name="Suicide")
+cor(leading)
+cor(Deaths)
+cor(leading$Deaths)
+cor(leading$Deaths,leading$State)
+cor(leading$Deaths,leading$Year)
+cor(leading$Deaths,leading$Age.adjusted.Death.Rate)
+names(leading)
+ssui <- leading$Deaths = suicide
+ssui <- leading$Deaths = "Suicide"
+ssui <- leading$Deaths == "Suicide"
+ssui <- leading$Cause.Name = "Suicide"
+leadingS = subset(leading,leading$Cause.Name=="Suicide")
+str(leadingS)
+summary(leadingS)
+describe(leadingS)
+leadingSAlaska = subset(leading,leading$State=="Alaska")
+describe(Alaska)
+describe(leadingSAlaska)
+summary(leadingSAlaska)
+leadingSAlaska = subset(leading,leading$State=="Alaska",leading$Cause.Name=="Suicide"))
+leadingSAlaska = subset(leading,leading$State=="Alaska",leading$Cause.Name=="Suicide")
+newdata <- leading[c(-2,-6)]
+summary(newdata)
+newdata <- mydata[ which(mydata$gender=='F' 
+newdata <- leading[c(-2,-6)]
+summary(newdata)
+newdata <- newdata[which(newdata$Cause.Name=="Suicide" &newdata$State=="Alaska")]
+newdata <- newdata[which(newdata$Cause.Name=="Suicide" & newdata$State=="Alaska"),]
+summary(newdata)
+describe(newdata)
+newdata <- leading[which(newdata$Cause.Name=="Suicide" & newdata$State=="Wyoming"),]
+summary(newdata)
+summary(leading)
+newdata <- leading[which(leading$Cause.Name=="Suicide" & leading$State=="Wyoming"),]
+describe(newdata)
+summary(newdata)
+newdata <- leading[which(leading$Cause.Name=="Suicide" & leading$State=="Montana"),]
+describe(newdata)
+summary(newdata)
+newdata <- leading[which(leading$Cause.Name=="Suicide" & leading$State=="District of Columbia"),]
+describe(newdata)
+summary(newdata)
+newdata <- leading[which(leading$Cause.Name=="Suicide" & leading$State=="New Jersey"),]
+describe(newdata)
+summary(newdata)
+newdata <- leading[which(leading$Cause.Name=="Suicide" & leading$State=="New York"),]
+describe(newdata)
+summary(newdata)
+str(newdata)
+table(newdata$Deaths,newdata$Year)
+ls()
+sort(table(newdata$Deaths,newdata$Year)
+;
+plot(newdata$Deaths,newdata$Year)
+plot(newdata$Year,newdata$Deaths)
+newdata <- leading[which(leading$Cause.Name=="Suicide" & leading$State=="New Jersey"),]
+plot(newdata$Year,newdata$Deaths)
+newdata <- leading[which(leading$Cause.Name=="Suicide" & leading$State=="District of Columbia"),]
+plot(newdata$Year,newdata$Deaths)
+newdata <- leading[which(leading$Cause.Name=="Suicide" & leading$State=="Montana"),]
+plot(newdata$Year,newdata$Deaths)
+newdata <- leading[which(leading$Cause.Name=="Suicide" & leading$State=="Wyoming"),]
+plot(newdata$Year,newdata$Deaths)
+newdata <- leading[which(leading$Cause.Name=="Suicide" & leading$State=="Alaska"),]
+plot(newdata$Year,newdata$Deaths)
+q()
+model1=lm(Year,Deaths,data=newdata)
+model=lm(newdata$Year,newdata$Deaths,data=newdata)
+model=lm(newdata$Year~newdata$Deaths,data=newdata)
+summary(model)
+model=lm(newdata$Deaths~newdata$Year,data=newdata)
+summary(model)
+model$residuals
+SSE = sum(model1$residuals^2)
+SSE = sum(model$residuals^2)
+SSE
+model=lm(newdata$Year~newdata$Deaths,data=newdata)
+summary(model)
+SSE=sum(model$residuals^2)
+SSE
+newdata <- leading[which(leading$Cause.Name=="Suicide" & leading$State=="Wyoming"),]
+model=lm(newdata$Year~newdata$Deaths,data=newdata)
+summary(model)
+SSE=sum(model$residuals^2)
+SSE
+newdata <- leading[which(leading$Cause.Name=="Suicide" & leading$State=="Montana"),]
+model=lm(newdata$Year~newdata$Deaths,data=newdata)
+summary(model)
+SSE=sum(model$residuals^2)
+SSE
+newdata <- leading[which(leading$Cause.Name=="Suicide" & leading$State=="District of Columbia"),]
+model=lm(newdata$Year~newdata$Deaths,data=newdata)
+summary(model)
+SSE=sum(model$residuals^2)
+SSE
+newdata <- leading[which(leading$Cause.Name=="Suicide" & leading$State=="New Jersey"),]
+model=lm(newdata$Year~newdata$Deaths,data=newdata)
+summary(model)
+SSE=sum(model$residuals^2)
+SSE
+newdata <- leading[which(leading$Cause.Name=="Suicide" & leading$State=="New York"),]
+model=lm(newdata$Year~newdata$Deaths,data=newdata)
+summary(model)
+SSE=sum(model$residuals^2)
+SSE
+ls()
+str(health)
+str(health$populationcount)
+str(health$PopulationCount)
+healthsub=subset(health,MeasureID="LPA" & StateDesc="Alaska" & DataValue="CrdPrv",select=c(Data_Value))
+healthsub=subset(health,MeasureID=="LPA" & StateDesc=="Alaska" & DataValue=="CrdPrv",select=c(Data_Value))
+healthsub=subset(health,MeasureId=="LPA" & StateDesc=="Alaska" & DataValue=="CrdPrv",select=c(Data_Value))
+healthsub=subset(health,MeasureId=="LPA" & StateDesc=="Alaska" & DataValueTypeID=="CrdPrv",select=c(Data_Value))
+summary(healthsub)
+str(healthsub)
+healthsub=subset(health,MeasureId=="LPA" & StateDesc=="Wyoming" & DataValueTypeID=="CrdPrv",select=c(Data_Value))
+summary(healthsub)
+healthsub=subset(health,MeasureId=="LPA" & StateDesc=="Montana" & DataValueTypeID=="CrdPrv",select=c(Data_Value))
+summary(healthsub)
+healthsub=subset(health,MeasureId=="LPA" & StateDesc=="District of Columbia" & DataValueTypeID=="CrdPrv",select=c(Data_Value))
+summary(healthsub)
+healthsub=subset(health,MeasureId=="LPA" & StateDesc=="New York" & DataValueTypeID=="CrdPrv",select=c(Data_Value))
+summary(healthsub)
+healthsub=subset(health,MeasureId=="LPA" & StateDesc=="New Jersey" & DataValueTypeID=="CrdPrv",select=c(Data_Value))
+summary(healthsub)
+q()
+newdata <- leading[which(leading$Cause.Name=="Suicide" & leading$State=="New Jersey"),]
+model=lm(log(newdata$Year)~newdata$Deaths,data=newdata)
+summary(model)
+newdata <- leading[which(leading$Cause.Name=="Suicide" & leading$State=="New Jersey"),]
+newdata <- na.omit(newdata)
+newdata <- scale(newdata)
+mydata = newdata
+wss <- (nrow(mydata)-1)*sum(apply(mydata,2,var))
+for (i in 2:15) wss[i] <- sum(kmeans(mydata, 
+  centers=i)$withinss)
+plot(1:15, wss, type="b", xlab="Number of Clusters",
+  ylab="Within groups sum of squares")
+newdata <- na.omit(newdata)
+newdata <- scale(newdata)
