@@ -4,5 +4,5 @@ Tableau, Excel, & R-based data visualization and analysis project based off NCHS
 # Awards
 1st Place - Health Dataset, Best Insight Award from the 2018 Carolina Data Challenge hosted by Carolina Analytics and Data Science
 
-Made with ♥ in 2018
+Made with ❤ in 2018
 
